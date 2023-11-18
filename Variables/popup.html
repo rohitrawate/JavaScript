@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-Up</title>
+</head>
+<body>
+    <button id="button_A" > Press Mee </button>
+    <h3 id="heading_A"> Noice</h3>
+    
+</body>
+
+<script>
+     const buttonA = document.querySelector('#button_A');
+     const headingA = document.getElementById('heading_A');
+
+     buttonA.onclick = () => { 
+        // let ele = document.getElementById('button_A');
+        // ele.innerHTML = 'hello';
+        // ele.style.background = 'aqua';
+        // ele.style.fontSize = '25px';
+        // ele.style.fontFamily =  'Lucida Sans';
+        const name = prompt('What is Your Name');
+        console.log(`My name is ${name}`);
+        alert(`Hello ${name} nice to see you!`);
+        headingA.innerHTML = `Welcome ${name}`;
+
+     }
+
+</script>
+
+    <style>
+     /* #heading_A {
+       background-color: aqua;
+       font-family:'Lucida Sans', 'Lucida Sans Regular';
+     } */
+    </style>
+
+</html>
